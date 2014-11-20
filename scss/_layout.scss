@@ -7,3 +7,25 @@ Layout Rules
 .select, .archives {
 	display: none;
 }
+
+.intro header h1, .intro header h2 {
+	text-align: right;
+	margin-right: $gutter;
+}
+
+.summary p {
+	margin-right: $gutter;
+	margin-left: $gutter;
+}
+
+.summary p:first-of-type {
+	margin-top: $gutter;
+}
+
+.summary p:last-of-type {
+	margin-bottom: $gutter;
+}
+
+.preamble {
+	display: flex;
+}
