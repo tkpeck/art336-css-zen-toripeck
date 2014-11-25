@@ -1,5 +1,5 @@
 /* 
-12 Column Mobile First Gird System
+12 Column Mobile First Grid System
 */
 
 // Grid variables
@@ -10,14 +10,14 @@ $gutter: 20px;
 $padding: 6px;
 
 // Common to all grids
-.intro,
+.intro, .explanation, .participation,
 .row, .row-no-gutter {
     max-width: $desktop;
     margin: 0 auto;
     width: 100%;
 }
 
-.intro:after,
+.intro:after, .explanation:after, .participation:after,
 .row:after, .row-no-gutter:after {
     clear: both;
     content: "";
@@ -26,13 +26,13 @@ $padding: 6px;
 
 .intro header, .summary, .preamble,
 [class^="col-"] {
-	background-color: #ccc;
+	background-color: #ccc;							// ***background-color*** //
     float: left;
 //    margin-bottom: $gutter;
     width: 100%;
 }
 
-// Columns with verticle gutters
+// Columns with vertical gutters
 .row [class^="col-"],  {
     @media screen and (min-width: $tablet) {
         margin-left: $gutter/2;
@@ -170,7 +170,7 @@ $padding: 6px;
     }
 }
 
-.intro header, .preamble, 
+.intro header, .preamble,
 .row-no-gutter .col-9 { 
     @media screen and (min-width: $tablet) {
         width: 75%;

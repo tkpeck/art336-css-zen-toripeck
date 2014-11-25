@@ -4,28 +4,29 @@ Layout Rules
     Layout styles can also be divided into major and minor styles based on reuse. Major layout styles such as header and footer are traditionally styled using ID selectors but take the time to think about the elements that are common across all components of the page and use class selectors where appropriate.
 */
 
-.select, .archives {
-	display: none;
+body {
+	padding: $gutter;
 }
 
-.intro header h1, .intro header h2 {
-	text-align: right;
-	margin-right: $gutter;
+.explanation h3, .explanation p, .participation h3, .participation p {
+	padding-left: 25%;
+	padding-right: 25%;
 }
 
-.summary p {
-	margin-right: $gutter;
-	margin-left: $gutter;
+.benefits, .requirements {
+	max-width: $desktop;
+	margin: 0 auto;
+    width: 100%;
 }
 
-.summary p:first-of-type {
-	margin-top: $gutter;
+.benefits h3, .benefits p {
+	padding-right: 75%;
 }
 
-.summary p:last-of-type {
-	margin-bottom: $gutter;
+.requirements h3, .requirements p {
+	padding-left: 25%;
 }
 
-.preamble {
-	display: flex;
+.requirements p:last-of-type {
+	padding-left: 50%;
 }
