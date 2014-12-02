@@ -1015,6 +1015,12 @@ Globals
 Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
+body, div, section, header, h1, h2, h3, h4, p, aside, footer, nav, ul, ol {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* 
 Layout Rules
     CSS, by its very nature, is used to lay elements out on the page. However, there is a distinction between layouts dictating the major and minor components of a page. The minor components—such as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer. I refer to the minor components as Modules and will dive into those in the next section. The major components are referred to as Layout styles.
@@ -1052,20 +1058,8 @@ Module Rules
     A Module is a more discrete component of the page. It is your navigation bars and your carousels and your dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components. Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a standalone component. In doing so, the page will be more flexible. If done right, Modules can easily be moved to different parts of the layout without breaking.
     When defining the rule set for a module, avoid using IDs and element selectors, sticking only to class names. A module will likely contain a number of elements and there is likely to be a desire to use descendent or child selectors to target those elements. 
 */
-.intro, .explanation, .participation {
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  border-top: 5px solid black;
-}
-
-.summary {
-  border-bottom: 5px solid black;
-  border-left: 5px solid black;
-}
-
-.preamble {
-  border-top: 5px solid black;
-  border-right: 5px solid black;
+header[role=banner], .summary, .preamble, .explanation, .participation {
+  border: 5px solid black;
 }
 
 .select, .archives {

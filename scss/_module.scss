@@ -6,22 +6,9 @@ Module Rules
 
 // ** borders ** //
 
-.intro, .explanation, .participation, {
-	border-left: 5px solid black;
-	border-right: 5px solid black;
-	border-top: 5px solid black;
+header[role=banner], .summary, .preamble, .explanation, .participation {
+	border: 5px solid black;
 }
-
-.summary {
-	border-bottom: 5px solid black;
-	border-left: 5px solid black;
-}
-
-.preamble {
-	border-top: 5px solid black;
-	border-right: 5px solid black;
-}
-		// >>> box sizing!
 
 
 // ** other stuff ** //
